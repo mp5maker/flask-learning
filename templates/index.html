@@ -7,9 +7,37 @@
 {% block body %}
 <div>
   <header>
-    <h1>
-      Seriously cool bro
-    </h1>
+    <h3>
+      Task Master
+    </h4>
   </header>
+</div>
+<div class="content">
+  <table>
+    <tr>
+      <th>
+        Task
+      </th>
+      <th>
+        Added
+      </th>
+      <th>
+        Action
+      </th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="">Delete</a>
+        <br/>
+        <a href="">Update</a>
+      </td>
+    </tr>
+  </table>
+  <form action="/" method="POST">
+    <input type="text" name="content" id="content" />
+    <Input type="submit" value="Add Task" />
+  </form>
 </div>
 {% endblock %}
