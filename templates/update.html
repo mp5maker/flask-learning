@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Flask Understanding</title>
+{% endblock %}
+
+{% block body %}
+<div>
+  <header>
+    <h4>
+      Update Task Master
+    </h4>
+  </header>
+</div>
+<div class="content">
+  <form action="/update/{{ task.id }}" method="POST">
+    <input type="text" name="content" id="content" value="{{ task.content }}" />
+    <Input type="submit" value="Update Task" />
+  </form>
+</div>
+{% endblock %}
